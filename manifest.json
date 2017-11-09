@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Hi, Jira!",
+  "version": "0.0.10",
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://tfgames.atlassian.net/*"
+      ],
+      "js": [
+        "jquery-3.2.1.slim.min.js",
+        "hijira.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "jquery-3.2.1.slim.min.js",
+      "hijira.js"
+    ]
+  }
+}
